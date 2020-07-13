@@ -6,7 +6,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: microservice-config-cruii-dev
+    name: microservice-config-cruii-dev-0714
 ---
 spring:
   profiles: test
