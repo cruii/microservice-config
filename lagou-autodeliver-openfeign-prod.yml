@@ -3,7 +3,11 @@ server:
 spring:
   application:
     name: lagou-autodeliver-openfeign
-
+  rabbitmq:
+    host: hk2
+    port: 5672
+    username: admin
+    password: admin
 eureka:
   client:
     service-url:
