@@ -23,7 +23,11 @@ spring:
           uri: lb://lagou-resume
           predicates:
             - Path=/resumes/**
-
+  rabbitmq:
+    host: hk2
+    port: 5672
+    username: admin
+    password: admin
 blacklist:
   - 127.0.0.1
   - 192.168.0.1
