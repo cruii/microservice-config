@@ -1,2 +1,25 @@
-config:
-  info: "master branch,microservice-config/application-prod.yml version=1"
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://s1:10010/eureka/, http://s2:10011/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+
+spring:
+  application:
+    name: lagou-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: autodeiver-service-router
+          uri: lb://lagou-autodeliver-openfeign
+          predicates:
+            - Path=/autodeliver/**
+        - id: resume-service-router
+          uri: lb://lagou-resume
+          predicates:
+            - Path=/resumes/**
