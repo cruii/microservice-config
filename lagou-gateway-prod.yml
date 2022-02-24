@@ -31,3 +31,4 @@ spring:
 blacklist:
   - 127.0.0.1
   - 192.168.0.1
+info: hello chengdu
