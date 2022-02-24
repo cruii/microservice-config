@@ -17,7 +17,7 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
     # 自定义元数据
     metadata-map:
-      region: chengdu
+      region: shanghai
 
   # 开启Feign的熔断功能
 feign:
