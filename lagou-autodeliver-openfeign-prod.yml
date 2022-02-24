@@ -61,4 +61,4 @@ logging:
   level:
     io.cruii.autodeliver.openfeign.feign.ResumeServiceFeignClient: debug
 info:
-  msg: hello
+  msg: hello chengdu
