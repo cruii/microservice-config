@@ -31,4 +31,5 @@ spring:
 ip:
   blacklist:
     - 192.168.0.1
-info: beijing,chengdu,shanghai
+    - 127.0.0.1
+info: beijing,chengdu,shanghai,hangzhou
