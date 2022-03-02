@@ -4,7 +4,7 @@ spring:
   application:
     name: lagou-autodeliver-openfeign
   zipkin:
-    base-url: http://127.0.0.1:9411 # zipkin server的请求地址 sender:
+    base-url: http://hk2:9411 # zipkin server的请求地址 sender:
       # web 客户端将踪迹日志数据通过网络请求的方式传送到服务端，另外还有配 置
       # kafka/rabbit 客户端将踪迹日志数据传递到mq进行中转
     sender:
